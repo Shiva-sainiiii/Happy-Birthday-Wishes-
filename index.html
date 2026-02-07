@@ -8,6 +8,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+    /* Remove blue highlight on tap / focus */
+    * {
+    -webkit-tap-highlight-color: transparent;
+    }
+    
+    button, 
+    .glass-container {
+    outline: none;
+    }
+    
+    button:focus,
+    button:active,
+    .glass-container:focus,
+    .glass-container:active {
+    outline: none;
+    box-shadow: none;
+    }
         body {
             margin: 0;
             padding: 0;
